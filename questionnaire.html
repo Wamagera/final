@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 75%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid black;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #D7BDE2;
+  padding: 12px 20px 12px 40px;
+  resize: none;
+  overflow: auto;
+}
+
+.button {
+  background-color: #D7BDE2;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button:hover {background-color: #A569BD}
+
+.button:active {
+  background-color: #A569BD;
+  box-shadow: 0.5px #666;
+  transform: translateY(4px);
+}
+table, td {
+  border: 5px solid linen;
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Header</h1>
+  <p>Resize the browser window to see the responsive effect.</p>
+</div>
+
+<div class="topnav">
+  <a href="#">about</a>
+  <a href="#">home</a>
+  <a href="#">create account</a>
+  <a href="#">login</a>
+</div>
+
+<div class="row">
+  <div class="column side">
+    <h2>Side</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+  </div>
+
+  <div class="column middle">
+    <h1><strong>Questions</strong></h1>
+
+  <table style="width:100%">
+
+  <tr>
+    <td><textarea id="title" placeholder="title">
+</textarea><br></td>
+
+  <tr>
+    <td><textarea id="myTextarea" placeholder="Type your question">
+</textarea><br></td>
+  </tr>
+</table>
+ <button class="button" type="button" onclick="myFunction()">post</button>
+ <p id="post"></p>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTextarea").value;
+  var y = document.getElementById("title").value;
+  document.getElementById("post").innerHTML = y+ x;
+}
+</script>
+
+
+
+
+</body>
+
+</div>
+
+</body>
+</html>
