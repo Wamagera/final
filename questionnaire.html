@@ -85,9 +85,9 @@ textarea {
 }
 
 .button {
-  background-color: #D7BDE2;
+  background-color: #E9D6F0;
   border: none;
-  color: white;
+  color: black;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
@@ -106,15 +106,22 @@ textarea {
 table, td {
   border: 5px solid linen;
 }
+div {
+  background-color: #D7BDE2;
+  width: auto;
+  padding: 10px;
+  border: 5px solid gray;
+  margin: 0;
+}
 
 </style>
 </head>
 <body>
 
 <div class="header">
-  <h1> <a href = "home.html"><img border="0" src="Images/q.jpg" alt="logo" height="80" width="90" align="Left">
+  <h1> <a href = "home.html"><img border="0" src="Images/q.jpg" alt="logo" height="50" width="60" align="Left">
   </a>
-  <p> <img src="Images/s.png"alt="website name" align="center" height="80" width="400"</p>
+  <p> <img src="Images/s.png"alt="website name" align="center" height="50" width="200"</p>
 </div>
 
 <div class="topnav">
@@ -133,7 +140,7 @@ table, td {
   <div class="column middle">
     <h1><strong>Questions</strong></h1>
 
-  <table style="width:100%">
+  <table style="width:80%">
 
   <tr>
     <td><textarea id="title" placeholder="title">
@@ -152,7 +159,20 @@ function myFunction() {
   var y = document.getElementById("title").value;
   document.getElementById("post").innerHTML = y+ x;
 }
-</script>
+</script><br>
+<table style="width:80%">
+
+  <tr>
+    <td>
+    Mirera Dan&#160;&#160;&#160;&#160;&#160;&#160; <i>4 mins ago
+      &#160;&#160;&#160;&#160;&#160;</i><strong><center>OOP vs TDD</center></strong>:</td>
+
+  <tr>
+    <td><img src="Images/c.png" align="left" width="50" height="50" alt="Klematis">
+<div><center>Between oop and TDD which is better and is it possible to code excusively
+using one meethod?</center></div><br></td>
+  </tr>
+</table>
 
 
 
