@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>home</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 75%;
+  given that i'm a new users when I visit the signup page,
+  I should be able to create an account
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+
+body {
+
+}
+.container {
+  position: relative;
+  font-family: Arial;
+}
+
+.text-block {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: #f1f1f1;
+  opacity:1;
+  color: black;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+h4{
+  font-size: 35px;
+}
+.button {
+  float: right;
+  background-color: #E9D6F0;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button:hover {background-color: #A569BD}
+
+.button:active {
+  background-color: #A569BD;
+  box-shadow: 0.5px #666;
+  transform: translateY(4px);
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header">
+    <h1> <a href = "home.html"><img border="0" src="Images/q.jpg" alt="logo" height="50" width="60" align="Left">
+    </a>
+    <p> <img src="Images/s.png"alt="website name" align="center" height="50" width="200"</p>
+  </div>
+
+</div>
+
+<div class="topnav">
+  <a href="#">about</a>
+  <a href="#">privacy policy</a>
+  <a href="#">contact us</a>
+</div>
+
+<div class="row">
+  <div class="column side">
+    <h2>Side</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+  </div>
+
+  <div class="column middle">
+    <h2>Main Content</h2>
+    <div class="container">
+  <img src="Images/skills.jpg" alt="skills" style="width:100%;">
+  <div class="text-block">
+    <h4>Learn More.<br>
+      Develop your skills.<br>
+      Grow your skill.<br>
+    Sign up today and unlock your potential.<br></h4>
+
+    <p>
+    <button class="button" href="login.html">log in</button>
+  <button class="button"  href="createaccount.html">create account</button>
+    </p>
+  </div>
+</div>
+  </div>
+
+
+</div>
+
+</body>
+</html>
